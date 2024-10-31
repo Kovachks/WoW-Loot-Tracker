@@ -1,27 +1,22 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import LoginButton from '../LoginButton';
 
 const Header = () => {
 	const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
-	const someVariable = 'test';
 
 	return (
 		<div className="border-b-2 border flex justify-between items-center p-4">
-			<div className="inline-block">WoW Loot Tracker</div>
+			<Link href="/"><div className="inline-block">WoW Loot Tracker</div></Link>
 			<div className="inline-block">
 				{isUserLoggedIn ? (
-					<div>Account</div>
+					<div className="inline-block">Account</div>
 				) : (
-					<div>
-						<Link href="/login">
-							<button>Login</button>
-                            <p>
-                            </p>
-						</Link>
+					<div className="inline-block">
+						<LoginButton />
 						<Link href="/signup">
 							<button className="ml-4">SignUp</button>
 						</Link>
-						<p>TEST</p>
 					</div>
 				)}
 			</div>

@@ -8,8 +8,8 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<div>
 			<Auth0Provider
-				domain='dev-n7z4i3ymoq03ixp2.us.auth0.com'
-				clientId='VD1ZXtAtRjhUHs50SsQKSp7EwcYLiMSh'
+				domain='dev-n3yhjibqsks4ztas.us.auth0.com'
+				clientId='H4ZSwcJLYshzmEO5YOuHTVTflC41LPqJ'
 				authorizationParams={{
 					redirect_uri: 'http://localhost:3000'
 				}}
@@ -19,5 +19,5 @@ export default function App({ Component, pageProps }: AppProps) {
 			</Auth0Provider>
 			
 		</div>
-	);
-}
+	)
+};

@@ -22,14 +22,6 @@ export default function Home() {
 				<h1>WoW Loot Tracker</h1>
 				<p>Never lose site of loot again</p>
 			</div>
-			<div>
-				<Link href="/create">
-					<button>Create Guild</button>
-				</Link>
-				<Link href="/login">
-					<button>Login</button>
-				</Link>
-			</div>
 		</div>
 	);
 }
