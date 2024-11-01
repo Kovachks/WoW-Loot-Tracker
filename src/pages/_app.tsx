@@ -14,7 +14,6 @@ export default function App({ Component, pageProps }: AppProps) {
 					redirect_uri: 'http://localhost:3000'
 				}}
 			>
-				<Header />
 				<Component {...pageProps} />;
 			</Auth0Provider>
 			
